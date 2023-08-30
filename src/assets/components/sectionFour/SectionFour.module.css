@@ -1,0 +1,116 @@
+.sectionFourContainer {
+  width: 45%;
+  background-color: rgba(218, 230, 242, 0.75);
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px #352f44;
+  float: right;
+}
+
+.sectionFourTitle {
+  display: block;
+  margin: 0px 0px 25px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #352f44;
+}
+
+.temperaturesDaily {
+  max-height: 200px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.sectionFourDailyData {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 30px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionFourDailyData:last-child {
+  margin-bottom: 0px;
+}
+
+.sectionFourDays {
+  display: block;
+  margin: 0px;
+  text-transform: uppercase;
+  text-align: start;
+  padding-left: 50px;
+}
+
+.sectionFourImage {
+  display: block;
+  margin: 0px;
+}
+
+.sectionFourTemperature {
+  font-size: 15px;
+  display: block;
+  margin: 0px;
+  text-align: end;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 1675px) {
+  .sectionFourDays {
+    padding-left: 25px;
+  }
+
+  .sectionFourTemperature {
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .sectionFourDailyData {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .sectionFourContainer {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .sectionFourDailyData {
+    font-size: 30px;
+  }
+
+  .sectionFourDays {
+    padding-left: 75px;
+  }
+
+  .sectionFourTemperature {
+    padding-right: 75px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .sectionFourDays {
+    padding-left: 50px;
+  }
+
+  .sectionFourTemperature {
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .sectionFourDays {
+    padding-left: 25px;
+  }
+
+  .sectionFourTemperature {
+    padding-right: 25px;
+  }
+}

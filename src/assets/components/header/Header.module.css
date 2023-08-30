@@ -1,0 +1,21 @@
+.headerContainer {
+  margin: auto;
+  background-color: rgba(218, 230, 242, 0.75);
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerTitle {
+  font-size: 40px;
+  color: #352f44;
+}
+
+.headerIcon {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  color: #352f44;
+}

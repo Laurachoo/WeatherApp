@@ -1,0 +1,53 @@
+.sectionOneContainer {
+  margin: auto;
+  background-color: rgba(218, 230, 242, 0.75);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px #352f44;
+}
+
+.cityAndTemperature {
+  display: grid;
+  padding-left: 100px;
+}
+
+.vilniusTemperature {
+  font-size: 50px;
+  color: #352f44;
+}
+
+.vilniusTitle {
+  font-size: 15px;
+  color: #9babb8;
+}
+
+.vilniusIcon {
+  font-size: 100px;
+  padding-right: 100px;
+}
+
+@media screen and (max-width: 575px) {
+  .cityAndTemperature {
+    padding-left: 25px;
+    font-size: 75px;
+  }
+
+  .vilniusIcon {
+    padding-right: 25px;
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .vilniusIcon {
+    padding-right: 25px;
+    font-size: 50px;
+  }
+
+  .vilniusTemperature {
+    font-size: 40px;
+  }
+}
