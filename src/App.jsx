@@ -23,6 +23,8 @@ import SectionThree from './assets/components/sectionThree/SectionThree';
 import SectionFour from './assets/components/sectionFour/SectionFour';
 import Footer from './assets/components/footer/Footer';
 
+const appId = 'Your App ID';
+
 const iconArray = {
   Thunderstorm: <FontAwesomeIcon icon={faCloudBolt} />,
   'Thunderstorm night': <FontAwesomeIcon icon={faCloudBolt} />,
@@ -67,7 +69,8 @@ function App() {
         lat +
         '&lon=' +
         lon +
-        '&exclude=minutely&units=metric&appid=543a28f4cec7ad5f39e99e2ec1407693'
+        '&exclude=minutely&units=metric&appid=' +
+        appId
     )
       .then((response) => {
         return response.json();
@@ -81,7 +84,8 @@ function App() {
   };
   useEffect(() => {
     fetch(
-      'http://api.openweathermap.org/data/2.5/group?id=593116,598316,598098,594739,596128&units=metric&appid=543a28f4cec7ad5f39e99e2ec1407693'
+      'http://api.openweathermap.org/data/2.5/group?id=593116,598316,598098,594739,596128&units=metric&appid=' +
+        appId
     )
       .then((response) => {
         return response.json();
